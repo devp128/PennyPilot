@@ -9,7 +9,9 @@ app.use(cors({
   origin: (origin, callback) => {
     const allowed = [
       'http://localhost:5173',
-      'http://localhost:5173/'
+      'http://localhost:5173/',
+      'https://penny-pilot-three.vercel.app/',
+      'https://penny-pilot-three.vercel.app'
     ];
     if (!origin || allowed.includes(origin)) {
       callback(null, true);

@@ -50,21 +50,22 @@ A modern, full-stack expense tracker with authentication, analytics, and a clean
 
 ### 1. Clone the repo
 ```sh
-git clone https://github.com/yourusername/pennypilot-expense-tracker.git
+git clone https://github.com/devp128/PennyPilot.git
+
 ```
 
 ### 2. Setup Environment Variables
 
 #### Frontend (`frontend/.env`)
 ```
-VITE_API_URL=https://your-backend-render-url.onrender.com
+VITE_API_URL=https://your-backend-render-url.onrender.com  
 ```
 
 #### Backend (`backend/.env`)
 ```
 MONGODB_URI=your-mongodb-atlas-uri
 JWT_SECRET=your-jwt-secret
-CLIENT_URL=https://your-frontend-vercel-url.vercel.app
+CLIENT_URL=https://your-frontend-vercel-url.vercel.app 
 PORT=8080
 ```
 

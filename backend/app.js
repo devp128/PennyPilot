@@ -13,7 +13,7 @@ app.use(cors({
     ];
     if (!origin || allowed.includes(origin)) {
       callback(null, true);
-    } else {
+    } else { 
       callback(new Error('Not allowed by CORS'));
     }
   },

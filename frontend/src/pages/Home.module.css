@@ -1,0 +1,62 @@
+.home {
+  min-height: 100vh;
+  width: 100vw;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2.5rem 0 3rem 0;
+  box-sizing: border-box;
+}
+.statsRow {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 950px;
+  margin: 2.5rem 0 2.5rem 0;
+}
+.statCard {
+  flex: 1 1 0;
+  background: linear-gradient(135deg, #6366f1 0%, #7f9cf5 100%);
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2.2rem 1.5rem 1.6rem 1.5rem;
+  font-size: 2.1rem;
+  font-weight: 700;
+  box-shadow: 0 2px 12px rgba(99,102,241,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 180px;
+  max-width: 300px;
+  transition: box-shadow 0.2s;
+}
+.statDesc {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0.7rem;
+  color: #dbeafe;
+}
+
+.tabs {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.tab {
+  background: #f1f5f9;
+  border: none;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.tab.active {
+  background: #6366f1;
+  color: #fff;
+}

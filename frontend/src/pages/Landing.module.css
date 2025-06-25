@@ -1,0 +1,201 @@
+.landingRoot {
+  font-family: 'Manrope', 'Noto Sans', sans-serif;
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f2f4;
+  padding: 16px 40px;
+  background: #fff;
+}
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logoIcon {
+  color: #121416;
+  width: 24px;
+  height: 24px;
+}
+.logoText {
+  color: #121416;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.015em;
+}
+.navLinks {
+  display: flex;
+  gap: 36px;
+  flex: 1;
+  justify-content: flex-end;
+}
+.navLinks a {
+  color: #121416;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.authButtons {
+  display: flex;
+  gap: 8px;
+}
+.signUpBtn {
+  background: #b2cae5;
+  color: #121416;
+  font-weight: bold;
+  border: none;
+  border-radius: 999px;
+  padding: 0 24px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.signUpBtn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 4px 16px rgba(178,202,229,0.25);
+}
+
+.logInBtn {
+  background: #f1f2f4;
+  color: #121416;
+  font-weight: bold;
+  border: none;
+  border-radius: 999px;
+  padding: 0 24px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.logInBtn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 4px 16px rgba(178,202,229,0.12);
+}
+.logInBtn {
+  background: #f1f2f4;
+  color: #121416;
+  font-weight: bold;
+  border: none;
+  border-radius: 999px;
+  padding: 0 24px;
+  height: 40px;
+  cursor: pointer;
+}
+.mainContent {
+  flex: 1;
+  padding: 40px 16px 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDOkm3OxkBtfB-6BdOCGw8JUgZfrkDRWc1W4sj5FkQ1-ss2G0cA5z8opP13U4Wjw9kPNL6r4hMwgeTCb161sJ87Y7XQSXHHuof1S4ZhuZ6rrcIs-saHIl0eyxCgp2WCiKps2MfN0vQBElhfKve1GIcu5sHEFdjxviYAd-UNqkEmTIKQFbHx4bvpyP-_62yFBGY07UdjKoOXOY_xYxvdwb9NJ2rChU-MCk2_avAHGXhq_Mn0-DofYKZEycrysXRcvyDCBsCp_F7sMxg');
+  background-size: cover;
+  background-position: center;
+  min-height: 340px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+}
+.heroTextBox {
+  color: #fff;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+.heroTextBox h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: -0.033em;
+}
+.heroTextBox h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.heroBtns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.heroImage {
+  flex: 1;
+}
+.featuresSection {
+  margin-top: 24px;
+  text-align: center;
+}
+.featuresSection h1 {
+  color: #121416;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.featuresSection p {
+  color: #121416;
+  font-size: 1rem;
+  margin-bottom: 28px;
+}
+.featuresGrid {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.featureCard {
+  background: #fff;
+  border: 1px solid #dde0e3;
+  border-radius: 12px;
+  padding: 24px;
+  min-width: 180px;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.featureIcon {
+  color: #121416;
+  margin-bottom: 8px;
+}
+.footer {
+  background: #fff;
+  padding: 32px 0 24px 0;
+  text-align: center;
+  border-top: 1px solid #f1f2f4;
+  margin-top: 40px;
+}
+.footer div {
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.footer a {
+  color: #6a7581;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.footer p {
+  color: #6a7581;
+  font-size: 1rem;
+}

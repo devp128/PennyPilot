@@ -1,0 +1,100 @@
+.header {
+  width: 100vw;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  height: 64px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.logoDot {
+  width: 14px;
+  height: 14px;
+  background: #111;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+.appName {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #222b45;
+  letter-spacing: 0.01em;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.nav {
+  display: flex;
+  gap: 2.2rem;
+}
+.tab {
+  background: none;
+  border: none;
+  color: #23272f;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.45rem 1.25rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border-bottom: 2px solid transparent;
+}
+.active {
+  color: #2563eb;
+  background: #eaf1fa;
+  border-bottom: 3px solid #2563eb;
+  font-weight: 700;
+}
+.avatarWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.avatarCircle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #e5e7eb;
+  object-fit: cover;
+  background: #f2f4f7;
+}
+.dropdown {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(16,30,54,0.06);
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  color: #2999ff;
+  font-weight: 600;
+  font-size: 1rem;
+  z-index: 10;
+  transition: background 0.2s, color 0.2s;
+}
+.dropdown:hover {
+  background: #2999ff;
+  color: #fff;
+}
+
+
+.logoIcon {
+  color: #121416;
+  width: 24px;
+  height: 24px;
+}

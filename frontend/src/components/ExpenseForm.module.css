@@ -1,0 +1,33 @@
+.form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+.form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.form input, .form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+.form button {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.form button:hover {
+  background: #4f46e5;
+}

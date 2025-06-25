@@ -19,6 +19,33 @@ A modern, full-stack expense tracker with authentication, analytics, and a clean
 
 ---
 
+## App Screenshots
+
+### 1. Landing Page
+![Landing Page](./assets/landing.png)
+*Modern, welcoming landing page for your expense tracker.*
+
+### 2. Login / Signup
+![Login and Signup](./assets/login-signup.png)
+*Secure authentication with gender-based avatar selection.*
+
+### 3. Dashboard
+![Dashboard](./assets/dashboard.png)
+*Visual overview of your spending with charts and analytics.*
+
+### 4. Expenses
+![Expenses](./assets/expenses.png)
+*View, search, and manage all your expenses in one place.*
+
+### 5. Add Expense
+![Add Expense](./assets/add-expense.png)
+*Quickly add new expenses with category, amount, and date.*
+
+### 6. Settings & Logout
+![Settings and Logout](./assets/settings.png)
+*Update your profile, change settings, and log out securely.*
+
+
 ## Getting Started
 
 ### 1. Clone the repo

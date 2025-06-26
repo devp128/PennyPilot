@@ -36,7 +36,7 @@ const Expenses = () => {
 
   const handleUpdateExpense = async (updated) => {
     try {
-      const res = await fetch(`/api/expenses/${editingExpense._id}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/expenses/${editingExpense._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

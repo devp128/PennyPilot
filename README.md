@@ -19,6 +19,7 @@ A modern, full-stack expense tracker with authentication, analytics, and a clean
 
 ---
 
+
 ## App Screenshots
 
 ### 1. Landing Page

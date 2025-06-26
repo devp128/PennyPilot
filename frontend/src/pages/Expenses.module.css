@@ -24,3 +24,23 @@
 .addButton:hover {
   background: #1749b1;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .expensesPage {
+    padding: 1rem 0 2rem 0;
+  }
+  .addButton {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.08rem;
+    border-radius: 0.7rem;
+    margin-bottom: 1.2rem;
+  }
+}
+@media (max-width: 400px) {
+  .addButton {
+    font-size: 0.97rem;
+    padding: 0.8rem 0;
+  }
+}

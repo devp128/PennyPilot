@@ -59,6 +59,31 @@
 .input:-ms-input-placeholder {
   color: #7b8794;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .addExpensePage {
+    padding: 1rem 0 2rem 0;
+  }
+  .form {
+    max-width: 98vw;
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
+    gap: 1.2rem;
+    margin: 1.5rem auto 0 auto;
+  }
+  .label {
+    font-size: 1rem;
+  }
+  .input {
+    font-size: 0.97rem;
+    padding: 0.7rem 0.8rem;
+  }
+}
+@media (max-width: 400px) {
+  .form {
+    padding: 0.7rem 0.2rem 0.7rem 0.2rem;
+  }
+}
 .input::-ms-input-placeholder {
   color: #7b8794;
 }

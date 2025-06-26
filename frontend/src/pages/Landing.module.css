@@ -58,6 +58,46 @@
   cursor: pointer;
   transition: transform 0.15s, box-shadow 0.15s;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .landingRoot {
+    padding: 0.5rem 0;
+  }
+  .header {
+    flex-direction: column;
+    padding: 0.7rem 0.7rem;
+    align-items: stretch;
+  }
+  .logoSection {
+    margin-bottom: 0.4rem;
+    justify-content: center;
+  }
+  .navLinks {
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .authButtons {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .signUpBtn {
+    width: 100%;
+    padding: 0.7rem 0;
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    padding: 0.3rem 0.2rem;
+  }
+  .signUpBtn {
+    font-size: 0.97rem;
+    padding: 0.5rem 0;
+  }
+}
 .signUpBtn:hover {
   transform: scale(1.06);
   box-shadow: 0 4px 16px rgba(178,202,229,0.25);

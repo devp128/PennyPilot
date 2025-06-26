@@ -44,6 +44,7 @@ const Header = () => {
           ))}
         </nav>
         <div className={styles.avatarWrapper}>
+          {/* Avatar always on right */}
           <img
             src={avatarImg}
             alt="avatar"
@@ -51,15 +52,41 @@ const Header = () => {
             onClick={() => setShowDropdown((d) => !d)}
             style={{ cursor: "pointer" }}
           />
+          {/* Mobile dropdown: dashboard, expenses, settings, logout */}
           {showDropdown && (
-            <div
-              className={styles.dropdown}
-              onClick={() => {
-                setShowDropdown(false);
-                handleLogout();
-              }}
-            >
-              Logout
+            <div className={styles.profileDropdownMenu} tabIndex={-1}>
+              {window.innerWidth <= 600 ? (
+                <>
+                  <div className={
+                    `${styles.profileDropdownItem} ${location.pathname.startsWith('/dashboard') ? styles.selected : ''}`
+                  } onClick={() => { setShowDropdown(false); navigate('/dashboard'); }}>
+                    <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.7" viewBox="0 0 24 24" style={{marginRight:'8px'}}><path d="M3 13h2v-2H3v2zm4 0h2v-2H7v2zm4 0h2v-2h-2v2zm4 0h2v-2h-2v2zm4 0h2v-2h-2v2z"/><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14"/></svg>
+                    Dashboard
+                  </div>
+                  <div className={
+                    `${styles.profileDropdownItem} ${location.pathname.startsWith('/expenses') ? styles.selected : ''}`
+                  } onClick={() => { setShowDropdown(false); navigate('/expenses'); }}>
+                    <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.7" viewBox="0 0 24 24" style={{marginRight:'8px'}}><rect x="4" y="8" width="16" height="8" rx="2"/><path d="M4 12h16"/></svg>
+                    Expenses
+                  </div>
+                  <div className={
+                    `${styles.profileDropdownItem} ${location.pathname.startsWith('/settings') ? styles.selected : ''}`
+                  } onClick={() => { setShowDropdown(false); navigate('/settings'); }}>
+                    <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.7" viewBox="0 0 24 24" style={{marginRight:'8px'}}><circle cx="12" cy="8" r="4"/><path d="M4 20c0-2.21 3.58-4 8-4s8 1.79 8 4"/></svg>
+                    Settings
+                  </div>
+                  <div className={styles.profileDropdownDivider} />
+                  <div className={styles.profileDropdownItem} onClick={() => { setShowDropdown(false); handleLogout(); }} style={{color:'#e53935',fontWeight:600}}>
+                    <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.7" viewBox="0 0 24 24" style={{marginRight:'8px'}}><path d="M16 17l5-5-5-5M21 12H9"/><path d="M12 19a9 9 0 1 1 0-14"/></svg>
+                    Logout
+                  </div>
+                </>
+              ) : (
+                <div className={styles.profileDropdownItem} onClick={() => { setShowDropdown(false); handleLogout(); }} style={{color:'#e53935',fontWeight:600}}>
+                  <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.7" viewBox="0 0 24 24" style={{marginRight:'8px'}}><path d="M16 17l5-5-5-5M21 12H9"/><path d="M12 19a9 9 0 1 1 0-14"/></svg>
+                  Logout
+                </div>
+              )}
             </div>
           )}
         </div>
